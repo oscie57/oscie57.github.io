@@ -1,0 +1,20 @@
+---
+title: Loading...
+layout: content-only
+---
+<audio src="assets/loading.ogg" autoplay loop id="loadaudio">
+    If you see this, your browser does not support the audio element.
+</audio>
+
+<button class="button is-large is-primary is-loading">SLAY</button>
+
+<script>
+const loadaudio = document.getElementById("loadaudio");
+loadaudio.volume = 0.1;
+loadaudio.play();
+
+function makeAlert() {
+    window.location.replace("/fun");
+};
+setInterval(makeAlert, 7314)
+</script>
