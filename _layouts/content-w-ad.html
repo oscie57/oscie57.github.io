@@ -4,8 +4,8 @@
         <title>{{ page.title }}</title>
 
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/anim.css"><!--
-        <link rel="stylesheet" href="css/advert.css">
+        <link rel="stylesheet" href="css/anim.css">
+        <link rel="stylesheet" href="css/advert.css"><!--
         <link rel="stylesheet" href="css/table.css">
         -->
         
@@ -20,10 +20,18 @@
         <section class="hero is-fullheight has-text-centered">
             <div id="main-wrapper" class="hero-body">
               
+
                 <div id="main" class="container is-widescreen has-left-left">
+
+                    <div class="section">
+                        {% include advert.html %}
+                        <h2 class="is-6">Advertisement</h2>
+                    </div>
+
                     <div class="has-text-black">
                         {{ content }}
                     </div>
+
                 </div>
 
             </div>
