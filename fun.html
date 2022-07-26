@@ -4,5 +4,19 @@ layout: content-w-ad
 ---
 
 <video width="320" height="240" controls autoplay>
-    <source src="assets/fishe.mp4">
+    <source id="vs" src="">
 </video>
+
+<script>
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max)
+}
+
+var ads = [
+    "assets/advertisement/cash.mp4",
+    "assets/advertisement/fishe.mp4"
+];
+
+var source = document.getElementById("vs");
+source.src = ads[getRandomInt(ads.length)];
+</script>
